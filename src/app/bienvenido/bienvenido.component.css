@@ -1,0 +1,96 @@
+
+@import url(https://fonts.google.com/specimen/Joti+One?query=joti);
+@font-face {
+    font-family: Kaushan-Script;
+    src: url(https://fonts.google.com/specimen/Kaushan+Script?query=kau);
+}
+.fondo{
+    
+    width: 577px;
+    height: 392px;
+    border-radius: 20px;
+    background: #106B66;
+}
+.nav{
+    width: 127.5px;
+    height: 392px;
+    border-radius: 20px;
+    background-color: #17342D;
+}
+.marca > img{ 
+    width: 123.422px;
+    height: 120px;
+    border-radius: 250px;
+}
+
+.logo-home{
+    width: 26.742px;
+    height: 26px;
+    background: no-repeat;
+    background: lightgray 50%, cover, no-repeat;
+}
+
+.logo-subir{
+    
+    width: 23.656px;
+    height: 27px;
+    border-radius: 1px;
+    background:  lightgray 50%, cover, no-repeat;
+}
+.logo-productos{
+    width: 26.742px;
+    height: 26px;
+    background: no-repeat;
+    background: lightgray 50%, cover, no-repeat;
+}
+ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.logo-logout{
+    width: 23.656px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background:  lightgray 50%, cover, no-repeat;
+}
+.boton{
+    width: 63.768px;
+    height: 24px;
+}
+.logo-logout{
+    width: 26.742px;
+    height: 27px;
+    flex-shrink: 0;
+}
+a{
+    text-decoration: none;
+}
+.boton-logout{
+    width: 89.481px;
+    height: 19px;
+    flex-shrink: 0; 
+}
+.boton-logout > h2.cerrar {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Joti One', serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+.bienvenido{
+    width: 437px; 
+    height: 52px; 
+    left: 124px; 
+    top: 23px; 
+    position: absolute; 
+    text-align: center; 
+    color: rgb(223, 223, 223); 
+    font-size: 36px; 
+    font-family: Kaushan-Script;
+    font-weight: 400; 
+    word-wrap: "break-word"
+}
