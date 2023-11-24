@@ -21,6 +21,8 @@
     width: 123.422px;
     height: 120px;
     border-radius: 250px;
+    padding-left: 2px;
+    padding-top: 2px;
 }
 
 .logo-home{
@@ -32,7 +34,7 @@
 
 .logo-subir{
     
-    width: 23.656px;
+    width: 25px;
     height: 27px;
     border-radius: 1px;
     background:  lightgray 50%, cover, no-repeat;
@@ -45,7 +47,7 @@
 }
 ul{
     list-style: none;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .logo-logout{
     width: 23.656px;
@@ -66,13 +68,24 @@ ul{
 a{
     text-decoration: none;
 }
+.boton > h2.redic{
+    color: #000000;
+    text-align: center;
+    font-family: 'Joti One', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+
+}
 .boton-logout{
     width: 89.481px;
     height: 19px;
     flex-shrink: 0; 
 }
 .boton-logout > h2.cerrar {
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     font-family: 'Joti One', serif;
     font-size: 12px;

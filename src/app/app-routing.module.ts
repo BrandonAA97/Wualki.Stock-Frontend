@@ -3,11 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { ProductosComponent } from './productos/productos.component';
 import { SubirComponent } from './subir/subir.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path: 'bienvenido', component: BienvenidoComponent},
   {path: 'productos', component: ProductosComponent},
-  {path: 'subir', component: SubirComponent}
+  {path: 'subir', component: SubirComponent},
+  {path: 'login', component: LoginComponent},
+  {path: '**', component: BienvenidoComponent}
 ];
 
 @NgModule({
