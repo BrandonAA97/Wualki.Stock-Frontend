@@ -1,79 +1,57 @@
-/* body{
-    display: flex;
-    background-color:antiquewhite;
-    align-items: center;
-    justify-content: center; 
-    width: 100vh;
-    height: 100vh;
-    position:absolute;
-    overflow: hidden;
-
-}
-.fondo{
-
-    border-radius: 40px;
-    background: #106B66;
-    text-align: center; 
-    background-size: cover;
-    padding: 20px;
-    position: absolute;
-} */
-/* .login{
-    display: flex;
-    
-}
-.boton{
-    margin-left: 20px;
-}
-.marca{
-    background-color: aqua;
-    background-size: cover;
-    padding: 20px;
-    
-}
-.logo{
-    margin: 10vh;
-    width: 300px;
-    height: 300px;    
-    border-radius: 250px;
-    top:50%;
-    left: 50%;
-
-
-} */
 body{
+    display: flex;
     margin: 0; /* Elimina el margen predeterminado del body */
     padding: 0; /* Elimina el relleno predeterminado del body */
-    background-color: aqua; /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir completamente el fondo */
     background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
     background-position: center; /* Centra la imagen de fondo */
     height: 100vh;
     width: 100%;
+    justify-content: center;
+    background-image: url(/assets/fondo-body.jpg);
+    align-content: center;
+    flex-wrap: wrap;
 }
 h1{
     text-align: center;
+    
 }
 .fondo{
-    background-color:blue;
-    border-radius: 100px;
-    height: 20vh;
-    background-position: center;
+    background-color: rgb(2 49 46 / 90%);
     display: flex;
+    padding: 60px;
+    height: 360px;
+    border-radius: 70px;
+    background-position: center;
     justify-content: center;
+    align-items: center;
+    
+}
+.contenedor{
+    display: flex;
+    background-color: rgb(2 118 150/ 70%);
+    border-radius: 70px;
+    min-height: 39vh;
+    max-height: 40vh;
+    max-width: 100vh;
+    min-width: 60vh;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
 }
 .formulario{
-    display: relative;
+    display: flex;
     justify-items: center;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    display: flex;
+    align-items: flex-end;
+
+    
 }
 .logo{
-
     border-radius: 250px; 
     background-position: center;
+    height: 250px;
 }
 input{
     border-radius: 8px;
@@ -81,5 +59,5 @@ input{
     margin: 2px;
     text-decoration: none;
     border-color: white;
-
 }
+

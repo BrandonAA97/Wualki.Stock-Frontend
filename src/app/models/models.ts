@@ -8,13 +8,15 @@ export class Productos {
       public categoria: string
     ){}
 }
-export class login {
+export class Login {
     constructor(
-      public id: number,
-      public titulo: string,
-      public subtitulo: string,
-      public image: string,
-      public url: string,
-      public categoria: string
+      public username: string,
+      public password: string
     ){}
+}
+export class LoginDto{
+  constructor(
+    public username: string,
+    public password: string
+  ){}
 }
