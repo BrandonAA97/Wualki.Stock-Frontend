@@ -11,12 +11,15 @@ body{
     background-image: url(/assets/fondo-body.jpg);
     align-content: center;
     flex-wrap: wrap;
+   
 }
 .contenedor{
-    background-color: rgba(0, 0, 0, 0.35); 
+    background-color: rgba(0, 0, 0, 0.5); 
     border: 1px solid black;
     padding: 150px;
-    border-radius: 20px;
+    border-radius: 20px; 
+    backdrop-filter: blur(2px);
+    
 }
 h1{
     text-align: center;

@@ -13,10 +13,11 @@ body{
     flex-wrap: wrap;
 }
 .contenedor{
-    background-color: rgba(0, 0, 0, 0.35); 
+    background-color: rgba(0, 0, 0, 0.5); 
     border: 1px solid black;
     padding: 150px;
     border-radius: 20px;
+    backdrop-filter: blur(2px);
 }
 
 .fondo{
