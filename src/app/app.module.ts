@@ -9,6 +9,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { LoginService } from './Service/Login.Service';
+import { ProductoService } from './Service/Producto.Service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -25,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [LoginService],
+  providers: [LoginService, ProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
