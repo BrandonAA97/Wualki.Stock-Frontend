@@ -4,14 +4,14 @@ import { Productos } from '../models/models';
     name: "filtro"
 })
 export class FiltroPipe implements PipeTransform{
-    transform(productos: Productos[], titulo: string): Productos[] {
+    transform(productos: Productos[], nombre: string): Productos[] {
         console.log(productos)
-        console.log(titulo)
-        if (!productos || !titulo){
+        console.log(nombre)
+        if (!productos || !nombre){
             return productos
         }
         return productos.filter(producto =>
-            producto.titulo.toLowerCase().includes(titulo.toLowerCase())
+            producto.nombre.toLowerCase().includes(nombre.toLowerCase())
         )
     }
 }

@@ -43,7 +43,29 @@
             </ul>
           </div>
         </div>
-        <div class="tabla">Bienvenido a Wualki</div>
+        <table class="tablaProductos">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nombre</th>
+              <th>Stock</th>
+              <th>Precio de Lista</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+        
+          <tr
+            class="flex" *ngFor="let product of producto | filtro: datoBuscado">
+            <th>{{product.id}}</th> 
+            <th>{{product.nombre}}</th>
+            <th>{{product.stock}}</th>
+            <th>{{product.precioLista}}</th>
+            <div class="btn-group">
+                
+            </div>
+          </tr> 
+        </table>
+        
       </div>
     </div>
   </body>

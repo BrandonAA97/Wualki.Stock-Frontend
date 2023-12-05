@@ -148,16 +148,27 @@ h2.estoyeneste{
     line-height: normal;
     cursor: pointer;
 }
-.tabla{
-    margin-top: 20px;
+.tablaProductos{
     display: flex;
     width: 600px;
-    height: 52px;
-    background-position: center;
-    justify-content: center;
-    text-align: center; 
-    color: rgb(223, 223, 223); 
-    font-size: 36px; 
-    font-family: 'kaushan', serif;
-    font-weight: 400; 
+    font-size: 26px; 
+    flex-direction: column;
+    align-items: stretch;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #6e3e3e;
+}
+.actions {
+    display: flex;
+}   
+  
+.edit, .delete {
+    cursor: pointer;
+    margin-right: 10px;
+    color: blue;
 }

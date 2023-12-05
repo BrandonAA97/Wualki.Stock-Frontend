@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductoService } from '../Service/Producto.Service';
 import { Productos } from '../models/models';
+// import { faCirclePlus} from '@fortawesone/free-solid-svg-icons'
 
 @Component({
   selector: 'app-productos',
@@ -8,7 +9,7 @@ import { Productos } from '../models/models';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent  implements OnInit{
-
+  // faCirclePlus = faCirclePlus;
   producto: Productos[]=[];
   constructor(private productoService: ProductoService){}
 

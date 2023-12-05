@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FiltroPipe } from './Pipe/filtro.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,13 +13,15 @@ import { LoginService } from './Service/Login.Service';
 import { ProductoService } from './Service/Producto.Service';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidoComponent,
     SubirComponent,
     ProductosComponent,
-    LoginComponent
+    LoginComponent,
+    FiltroPipe
   ],
   imports: [
     BrowserModule,
