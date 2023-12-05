@@ -1,21 +1,35 @@
-
 <body>
+  <div class="contenedor">
     <div class="fondo">
-        
-        <div class="contenedor">
-
-            <form class="formulario">
-                <h1>Inicio de sesion</h1>
-                <br><br>
-                <div>   
-                    <input type="username" name="user" id="username" placeholder="Nombre de Usuario" [(ngModel)]="username" required>
-                </div>
-                <div>   
-                    <input type="password" placeholder="Contraseña" name="password" [(ngModel)] ="password" required>
-                </div>   
-                <div><button (click)="OnLogin()" type="button">Inicio sesion</button></div>
-            </form>
-            <img class="logo" src="assets/logo.jpeg" alt=" logo">
-        </div>
+      <div class="nav">
+        <form class="formulario">
+          <h1>Inicio de sesion</h1>
+          <br /><br />
+          <div>
+            <input
+              type="username"
+              name="user"
+              id="username"
+              placeholder="Nombre de Usuario"
+              [(ngModel)]="username"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              placeholder="Contraseña"
+              name="password"
+              [(ngModel)]="password"
+              required
+            />
+          </div>
+          <div>
+            <button (click)="OnLogin()" type="button">Inicio sesion</button>
+          </div>
+        </form>
+        <img class="logo" src="assets/logo.jpeg" alt=" logo" />
+      </div>
     </div>
+  </div>
 </body>

@@ -1,41 +1,72 @@
 body{
     display: flex;
+    margin: 0;
+    padding: 0; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh;
+    width: 100%;
     justify-content: center;
+    background-image: url(/assets/fondo-body.jpg);
+    align-content: center;
+    flex-wrap: wrap;
+}
+.contenedor{
+    background-color: rgba(0, 0, 0, 0.35); 
+    border: 1px solid black;
+    padding: 150px;
+    border-radius: 20px;
 }
 
 .fondo{
+    border: 5px double #080505;
     display: flex;
-    margin-top: 30vh;
-    width: 577px;
-    height: 392px;
+    height: 460px;
+    width: 730px;
     border-radius: 20px;
     background: #106B66;
     justify-self: center;
 }
+li{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+li.cerrarsesion{
+    display: flex;
+    align-items: center;
+    padding-top: 110px;
+    padding-left: 10px;
+}
 .nav{
     display: flex;
-    width: 127.5px;
-    height: 392px;
+    width: 150px;
+    height: 460px;
     border-radius: 20px;
-    background-color: #17342D;
+    background-color: #15362e;
     flex-direction: column;
     
 }
-.marca > img{ 
-    width: 123.422px;
-    height: 120px;
-    border-radius: 250px;
-    padding-left: 2px;
-    padding-top: 2px;
+.marca {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
 }
-
+.marca > img{ 
+    height: 130px;
+    border-radius: 250px;
+}
+.redireciones{
+    padding-left: 10px;
+    padding-top: 20px;
+}
 .logo-home{
     width: 26.742px;
     height: 26px;
     background: no-repeat;
     background: rgb(255, 255, 255) 50%, cover, no-repeat;
 }
-
 .logo-subir{
     
     width: 25px;
@@ -72,8 +103,10 @@ ul{
 a{
     text-decoration: none;
 }
-.boton > h2.redic{
-    color: #000000;
+
+h2.estoyeneste{
+    display: flex;
+    color: #1ec3a6;
     text-align: center;
     font-family: 'Joti One', serif;
     font-size: 16px;
@@ -81,15 +114,31 @@ a{
     font-weight: 400;
     line-height: normal;
     cursor: pointer;
+    width: 95px;
+    justify-content: center;
 
+}
+.boton > h2.redic{
+    color: #d3d3d3;
+    text-align: center;
+    font-family: 'Joti One', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    width: 100px;
+    justify-content: center;
 }
 .boton-logout{
     width: 89.481px;
     height: 19px;
-    flex-shrink: 0; 
 }
 .boton-logout > h2.cerrar {
-    color: #000000;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    color: #d3d3d3;
     text-align: center;
     font-family: 'Joti One', serif;
     font-size: 12px;
@@ -99,14 +148,12 @@ a{
     cursor: pointer;
 }
 .bienvenido{
-    margin-top: 30vh;
+    margin-top: 20px;
     display: flex;
-    justify-content: flex-end;
-    width: 437px; 
-    height: 52px; 
-    left: 40vh; 
-    top: 23px; 
-    position: absolute; 
+    width: 600px;
+    height: 52px;
+    background-position: center;
+    justify-content: center;
     text-align: center; 
     color: rgb(223, 223, 223); 
     font-size: 36px; 
