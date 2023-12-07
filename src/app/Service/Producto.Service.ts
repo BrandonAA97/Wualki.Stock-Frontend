@@ -20,4 +20,5 @@ export class ProductoService{
      eliminarProducto(nombre: string): Observable<object>{
          return this.httpClient.delete(`${this.baseURL}/${nombre}`)
      }
+    
 }

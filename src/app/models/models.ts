@@ -3,7 +3,8 @@ export class Productos {
       public id: number,
       public nombre: string,
       public stock: number,
-      public precioLista: number
+      public precioLista: number,
+      public invercion: number
     ){}
 }
 export class Login {

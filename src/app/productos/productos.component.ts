@@ -11,12 +11,16 @@ import { Productos } from '../models/models';
 export class ProductosComponent  implements OnInit{
   // faCirclePlus = faCirclePlus;
   producto: Productos[]=[];
+  invercion: number = 0;
+  plista: number = 0;
+  ganancia: number = 0;
   constructor(private productoService: ProductoService){}
 
   datoBuscado="";
 
   ngOnInit(): void {
     this.todosLosProductos();
+    
   }
   private todosLosProductos(){
     this.productoService.obtenerLosProductos().subscribe(
@@ -25,6 +29,6 @@ export class ProductosComponent  implements OnInit{
         console.log(res);
       })
   }
+  
 }
-
 

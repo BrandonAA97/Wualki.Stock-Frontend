@@ -1,72 +1,92 @@
 <body>
-    <div class="contenedor">
-      <div class="fondo">
-        <div class="nav">
-          <div class="marca">
-            <img class="logo" src="assets/logo.jpeg" alt="logo" />
-          </div>
-          <div class="redireciones">
-            <ul>
-              <li>
-                <img class="logo-home" src="assets/home.png" alt="logo-home" />
-                <a class="boton" [routerLink]="['/bienvenido']"
-                  ><h2 class="redic">Home</h2></a
-                >
-              </li>
-              <li>
-                <img class="logo-subir" src="assets/subir.png" alt="logo-subir" />
-                <a class="boton" [routerLink]="['/subir']"
-                  ><h2 class="redic">Subir</h2></a
-                >
-              </li>
-              <li>
-                <img
-                  class="logo-productos" src="assets/productos.png" alt="logo-productos"/>
-                <a class="boton" [routerLink]="['/productos']"
-                  ><h2 class="estoyeneste">Productos</h2></a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="logout">
-            <ul>
-              <li class="cerrarsesion">
-                <img
-                  class="logo-logout"
-                  src="assets/logout.png"
-                  alt="logo-logout"
-                />
-                <a class="boton-logout" [routerLink]="['/login']"
-                  ><h2 class="cerrar">Cerrar Sesion</h2></a
-                >
-              </li>
-            </ul>
-          </div>
+  <div class="contenedor">
+    <div class="fondo">
+      <div class="nav">
+        <div class="marca">
+          <img class="logo" src="assets/logo.jpeg" alt="logo" />
+        </div>
+        <div class="redireciones">
+          <ul>
+            <li>
+              <img class="logo-home" src="assets/home.png" alt="logo-home" />
+              <a class="boton" [routerLink]="['/bienvenido']"
+                ><h2 class="redic">Home</h2></a
+              >
+            </li>
+            <li>
+              <img class="logo-subir" src="assets/subir.png" alt="logo-subir" />
+              <a class="boton" [routerLink]="['/subir']"
+                ><h2 class="redic">Subir</h2></a
+              >
+            </li>
+            <li>
+              <img
+                class="logo-productos"
+                src="assets/productos.png"
+                alt="logo-productos"
+              />
+              <a class="boton" [routerLink]="['/productos']"
+                ><h2 class="estoyeneste">Productos</h2></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="logout">
+          <ul>
+            <li class="cerrarsesion">
+              <img
+                class="logo-logout"
+                src="assets/logout.png"
+                alt="logo-logout"
+              />
+              <a class="boton-logout" [routerLink]="['/login']"
+                ><h2 class="cerrar">Cerrar Sesion</h2></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <tbody class="contenido">
+        <h1 style="display:flex; justify-content: center;">Wualki stock</h1>
+        <div class="busq-contenido">
+          <input
+            class="busq-input"
+            type="text"
+            name="datoBuscado"
+            placeholder="Buscar producto"
+            [(ngModel)]="datoBuscado"
+          />
         </div>
         <table class="tablaProductos">
           <thead>
-            <tr>
-              <th>Id</th>
-              <th>Nombre</th>
-              <th>Stock</th>
-              <th>Precio de Lista</th>
-              <th>Acciones</th>
+            <tr class="conttabla">
+              <th >Id</th>
+              <th style="width:200px">Nombre</th>
+              <th style="width:45px">Stock</th>
+              <th style="width:68px">Invecion</th>
+              <th style="width:70px">Precio de Lista</th>
+              <th style="width:75px">Ganancia</th>
+              <th style="width:70px">Acciones</th>
             </tr>
           </thead>
-        
+          <table>
           <tr
-            class="flex" *ngFor="let product of producto | filtro: datoBuscado">
-            <th>{{product.id}}</th> 
-            <th>{{product.nombre}}</th>
-            <th>{{product.stock}}</th>
-            <th>{{product.precioLista}}</th>
-            <div class="btn-group">
-                
-            </div>
-          </tr> 
+            class="contenidotabla"
+            *ngFor="let product of producto | filtro : datoBuscado">
+            <td style="width:16px">{{ product.id }}</td>
+            <td style="width:200px">{{ product.nombre }}</td>
+            <td style="width:45px">{{ product.stock }}</td>
+            <td style="width:68px">{{ product.invercion }}</td>
+            <td style="width:75px">{{ product.precioLista - product.invercion }}</td>
+            <td style="width:70px">{{ product.precioLista }}</td>
+            <td>
+              <div class="btn-group"> edit</div>
+            </td>
+          </tr>
+          </table>
         </table>
-        
-      </div>
+      </tbody>
     </div>
-  </body>
-  
+  </div>
+</body>
