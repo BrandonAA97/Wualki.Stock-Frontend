@@ -53,22 +53,22 @@
                   </div> -->
           <div>
             <ul>
-              <li > <input  type="text" [(ngModel)]="nombre"
+              <li > <input  type="text" [(ngModel)]="producto.nombre"
                 required placeholder="Nombre del Producto:">
               </li>
-              <li>  <input type="number" [(ngModel)]="stock"
+              <li>  <input type="number" [(ngModel)]="producto.stock"
                 required placeholder="Stock">
               </li>
-              <li> <input type="number" [(ngModel)]="plista"
+              <li> <input type="number" [(ngModel)]="producto.precioLista"
                 required placeholder="Pecio de Lista">
               </li>
-              <li> <input type="number" [(ngModel)]="invercion"
+              <li> <input type="number" [(ngModel)]="producto.invercion"
                  placeholder="Invercion"required>
               </li>
             </ul>
           </div>
           <div class="botonSubir">
-            <button (click)="AddProduc()" >Guardar Producto</button>
+            <button (click)="Update(id)" class="btn btn-outline-success btn-block">Actualizar</button>
           </div>
 
         </tbody>

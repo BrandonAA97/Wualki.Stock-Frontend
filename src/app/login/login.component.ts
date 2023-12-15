@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Login, LoginDto } from '../models/models';
+import { Login } from '../models/models';
 import { LoginService } from '../Service/Login.Service';
 
 @Component({
@@ -8,7 +8,7 @@ import { LoginService } from '../Service/Login.Service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
   
   constructor(
     private router: Router,
@@ -24,10 +24,6 @@ export class LoginComponent implements OnInit {
     errMsj: string ="";
 
 
-     ngOnInit(){
-
-       
-     }
 
     OnLogin(): void {
       

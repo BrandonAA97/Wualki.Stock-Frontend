@@ -24,7 +24,7 @@ body{
     border: 5px double #080505;
     display: flex;
     height: 460px;
-    width: 730px;
+    width: 795px;
     border-radius: 20px;
     background: #106B66;
     justify-self: center;
@@ -157,20 +157,11 @@ th, td {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 1px;
+    padding-right: 2px;
 }
 th {
     background-color: #6e3e3e;
 }
-.actions {
-    display: flex;
-}   
-  
-.edit, .delete {
-    cursor: pointer;
-    margin-right: 10px;
-    color: blue;
-}
-
 .conttabla{
     display: flex;
     padding: 2px;
@@ -178,4 +169,6 @@ th {
 .contenido{
     display: flex;
     flex-direction: column;
+    width: 700px;
+    padding-left: 8px;
 }

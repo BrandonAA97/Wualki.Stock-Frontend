@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginService } from './Service/Login.Service';
 import { ProductoService } from './Service/Producto.Service';
 import { HttpClientModule } from '@angular/common/http';
+import { ActualizarComponent } from './actualizar/actualizar.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     SubirComponent,
     ProductosComponent,
     LoginComponent,
-    FiltroPipe
+    FiltroPipe,
+    ActualizarComponent
   ],
   imports: [
     BrowserModule,

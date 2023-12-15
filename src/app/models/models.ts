@@ -7,6 +7,14 @@ export class Productos {
       public invercion: number
     ){}
 }
+export class ProductosDto {
+  constructor(
+    public nombre: string,
+    public stock: number,
+    public precioLista: number,
+    public invercion: number
+  ){}
+}
 export class Login {
     constructor(
       public username: string,

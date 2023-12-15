@@ -14,11 +14,17 @@ export class ProductoService{
      obtenerLosProductos(): Observable<Productos[]>{
          return this.httpClient.get<Productos[]>(`${this.baseURL}/allProduct`);
      }
-     modificarDatosProducto(nombre:string, producto:Productos ): Observable<object>{
-         return this.httpClient.put(`${this.baseURL}/${nombre}`, producto);
+     obtenerUnProd(id: number): Observable<Productos> {
+        return this.httpClient.get<Productos>(this.baseURL+ `/producto/${id}`);
+      }
+     subirProductos(producto: Productos): Observable<any>{
+        return this.httpClient.post<any>(this.baseURL + "/addProduct", producto);
+    }
+     modificarDatosProducto(productId: number, prod: Productos ): Observable<any>{
+         return this.httpClient.put<any>(this.baseURL + `/update/${productId}`, prod );
      }
-     eliminarProducto(nombre: string): Observable<object>{
-         return this.httpClient.delete(`${this.baseURL}/${nombre}`)
+     eliminarProducto(productId: number): Observable<any>{
+         return this.httpClient.delete(this.baseURL+ `/deleteProd/${productId}`);
      }
     
 }
