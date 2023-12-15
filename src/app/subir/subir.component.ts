@@ -29,7 +29,7 @@ export class SubirComponent {
       res => {
         console.log( res + "Agregado correctamente");
         this.router.navigate(["/bienvenido"])
-      }), console.error("El producto no se pudo agregar");
+      })
     
   }
 }

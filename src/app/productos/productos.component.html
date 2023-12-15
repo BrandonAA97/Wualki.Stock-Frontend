@@ -62,12 +62,12 @@
           <thead>
             <tr class="conttabla">
               <th >Id</th>
-              <th style="width:200px">Nombre</th>
-              <th style="width:45px">Stock</th>
+              <th style="width:202px">Nombre</th>
+              <th style="width:43px">Stock</th>
               <th style="width:68px">Invecion</th>
               <th style="width:120px">Precio de Lista</th>
               <th style="width:75px">Ganancia</th>
-              <th style="width:85px">Acciones</th>
+              <th style="width:90px">Acciones</th>
             </tr>
           </thead>
           <table>
@@ -81,9 +81,9 @@
             <td style="width:118px">{{ product.precioLista - product.invercion }}</td>
             <td style="width:73px">{{ product.precioLista }}</td>
             <td>
-                <div>
-                  <td><a  [routerLink]="['/editar', product.id]" class="btn btn-warning">Editar</a></td>
-                  <td><a (click)="deleteProduct(product.id)" [routerLink]="['/productos']" class="btn btn-warning">eliminar</a></td>
+                <div class="acciones">
+                  <td><a  [routerLink]="['/editar', product.id]" class="btn btn-warning"><img class="imagen-acciones" src="../../assets/editar.png" alt="imagen-editar"></a></td>
+                  <td><a (click)="deleteProduct(product.id)" [routerLink]="['/productos']" class="btn btn-warning"><img class="imagen-acciones" src="../../assets/borrar.png"></a></td>
                 </div>
             </td>
           </tr>

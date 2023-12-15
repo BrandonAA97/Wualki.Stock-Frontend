@@ -44,14 +44,8 @@
           </div>
         </div>
         <tbody class="contenido">
-                  <!-- <div class="pruebaform" >
-          <div class="prueba">
-            <input class="pruebaInput" type="text" [(ngModel)]="produc.nombre"
-            required placeholder=" ">
-            <label class="pruebaLabel" for="text">Nombre del Producto:</label>
-          </div>
-                  </div> -->
-          <div>
+          <h1>Subir Nuevo Producto</h1>
+          <div class="formulario">
             <ul>
               <li > <input  type="text" [(ngModel)]="nombre"
                 required placeholder="Nombre del Producto:">
@@ -59,12 +53,13 @@
               <li>  <input type="number" [(ngModel)]="stock"
                 required placeholder="Stock">
               </li>
-              <li> <input type="number" [(ngModel)]="plista"
-                required placeholder="Pecio de Lista">
-              </li>
               <li> <input type="number" [(ngModel)]="invercion"
                  placeholder="Invercion"required>
               </li>
+              <li> <input type="number" [(ngModel)]="plista"
+                required placeholder="Pecio de Lista">
+              </li>
+              
             </ul>
           </div>
           <div class="botonSubir">

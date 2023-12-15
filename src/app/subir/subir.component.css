@@ -151,7 +151,8 @@ h2.estoyeneste{
 }
 .contenido{
     display: flex;
-    height: 282px;
+    width: 645px;
+    height: max-content;
     background-position: center;
     justify-content: center;
     text-align: center;
@@ -167,38 +168,8 @@ h2.estoyeneste{
     padding-left: 140px;
 
 }
-.prueba{
-    position: relative;
-    --color: #5757577e;
-}
-.pruebaInput{
-    width: 90%;
+.formulario{
+    display: flex;
+    justify-content: center;
 
-    font-family: inherit;
-    font-size: .5rem;
-    color: #706c6c;
-    padding: .5rem .2rem;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-}
- .pruebaLabel{
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translate(10px);
-    transition: transform .5, color .3s;
-}
-
- .pruebaInput:focus + .pruebaLabel, 
-.pruebaInput:not(:placeholder-shown) + .pruebaLabel{
-    transform: translateY(-12px) scale(.7);
-    transform-origin: top left;
-    --color: #3866f2;
-} 
-.pruebaform{
-    width: 80%;
-    background-color: #1ec3a500;
 }

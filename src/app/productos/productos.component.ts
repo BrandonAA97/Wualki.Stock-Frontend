@@ -43,6 +43,7 @@ export class ProductosComponent  implements OnInit{
       res =>{
         console.log( "Eliminado correctamente");
         this.router.navigate(["/productos"])
+        location.reload()
       })
 
   }
