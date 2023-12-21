@@ -28,7 +28,7 @@ export class SubirComponent {
     this.productoService.subirProductos(prod).subscribe(
       res => {
         console.log( res + "Agregado correctamente");
-        this.router.navigate(["/bienvenido"])
+        this.router.navigate(["/productos"])
       })
     
   }

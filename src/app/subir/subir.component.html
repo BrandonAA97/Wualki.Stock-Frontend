@@ -46,24 +46,29 @@
         <tbody class="contenido">
           <h1>Subir Nuevo Producto</h1>
           <div class="formulario">
-            <ul>
-              <li > <input  type="text" [(ngModel)]="nombre"
-                required placeholder="Nombre del Producto:">
-              </li>
-              <li>  <input type="number" [(ngModel)]="stock"
-                required placeholder="Stock">
-              </li>
-              <li> <input type="number" [(ngModel)]="invercion"
-                 placeholder="Invercion"required>
-              </li>
-              <li> <input type="number" [(ngModel)]="plista"
-                required placeholder="Pecio de Lista">
-              </li>
-              
-            </ul>
+            <form>
+
+              <div class="contenido">
+               <label class="etiqueta" for="Nombre del Producto">Nombre del Producto</label>  
+               <input class="redondeado" type="text" placeholder="Ingresa el nombre del Producto" name="nombre" [(ngModel)]="nombre" required>
+              </div>
+              <div class="contenido">
+                <label class="etiqueta" for="Nombre del Producto">Stock del Producto</label>  
+                <input class="redondeado" type="number" placeholder="Ingresa cuanto stock tienes"name="stock" [(ngModel)]="stock" required>
+               </div>
+               <div class="contenido">
+                <label class="etiqueta" for="Nombre del Producto">Invercion</label>  
+                <input class="redondeado" type="number" placeholder="Ingresa cuanto invertiste"name="invercion" [(ngModel)]="invercion" required>
+               </div>
+              <div class="contenido">
+               <label class="etiqueta" for="nombre">Precio de lista del Producto</label>  
+               <input class="redondeado" type="number" placeholder="Ingresa tu apellido" name="plista"[(ngModel)]="plista" required>
+              </div>
+             
+             </form>
           </div>
-          <div class="botonSubir">
-            <button (click)="AddProduc()" >Guardar Producto</button>
+          <div class="botonguardar">
+            <button class="botonSubir" (click)="AddProduc()" >Guardar Producto</button>
           </div>
 
         </tbody>

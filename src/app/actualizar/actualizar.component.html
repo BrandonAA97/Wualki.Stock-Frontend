@@ -1,78 +1,117 @@
 <body>
-    <div class="contenedor">
-      <div class="fondo">
-        <div class="nav">
-          <div class="marca">
-            <img class="logo" src="assets/logo.jpeg" alt="logo" />
-          </div>
-          <div class="redireciones">
-            <ul>
-              <li>
-                <img class="logo-home" src="assets/home.png" alt="logo-home" />
-                <a class="boton" [routerLink]="['/bienvenido']"
-                  ><h2 class="redic">Home</h2></a
-                >
-              </li>
-              <li>
-                <img class="logo-subir" src="assets/subir.png" alt="logo-subir" />
-                <a class="boton" [routerLink]="['/subir']"
-                  ><h2 class="estoyeneste">Subir</h2></a
-                >
-              </li>
-              <li>
-                <img
-                  class="logo-productos" src="assets/productos.png" alt="logo-productos"/>
-                <a class="boton" [routerLink]="['/productos']"
-                  ><h2 class="redic">Productos</h2></a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="logout">
-            <ul>
-              <li class="cerrarsesion">
-                <img
-                  class="logo-logout"
-                  src="assets/logout.png"
-                  alt="logo-logout"
-                />
-                <a class="boton-logout" [routerLink]="['/login']"
-                  ><h2 class="cerrar">Cerrar Sesion</h2></a
-                >
-              </li>
-            </ul>
-          </div>
+  <div class="contenedor">
+    <div class="fondo">
+      <div class="nav">
+        <div class="marca">
+          <img class="logo" src="assets/logo.jpeg" alt="logo" />
         </div>
-        <tbody class="contenido">
-                  <!-- <div class="pruebaform" >
-          <div class="prueba">
-            <input class="pruebaInput" type="text" [(ngModel)]="produc.nombre"
-            required placeholder=" ">
-            <label class="pruebaLabel" for="text">Nombre del Producto:</label>
-          </div>
-                  </div> -->
-          <div>
-            <ul>
-              <li > <input  type="text" [(ngModel)]="producto.nombre"
-                required placeholder="Nombre del Producto:">
-              </li>
-              <li>  <input type="number" [(ngModel)]="producto.stock"
-                required placeholder="Stock">
-              </li>
-              <li> <input type="number" [(ngModel)]="producto.precioLista"
-                required placeholder="Pecio de Lista">
-              </li>
-              <li> <input type="number" [(ngModel)]="producto.invercion"
-                 placeholder="Invercion"required>
-              </li>
-            </ul>
-          </div>
-          <div class="botonSubir">
-            <button (click)="Update(id)" class="btn btn-outline-success btn-block">Actualizar</button>
-          </div>
-
-        </tbody>
+        <div class="redireciones">
+          <ul>
+            <li>
+              <img class="logo-home" src="assets/home.png" alt="logo-home" />
+              <a class="boton" [routerLink]="['/bienvenido']"
+                ><h2 class="redic">Home</h2></a
+              >
+            </li>
+            <li>
+              <img class="logo-subir" src="assets/subir.png" alt="logo-subir" />
+              <a class="boton" [routerLink]="['/subir']"
+                ><h2 class="estoyeneste">Subir</h2></a
+              >
+            </li>
+            <li>
+              <img
+                class="logo-productos"
+                src="assets/productos.png"
+                alt="logo-productos"
+              />
+              <a class="boton" [routerLink]="['/productos']"
+                ><h2 class="redic">Productos</h2></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="logout">
+          <ul>
+            <li class="cerrarsesion">
+              <img
+                class="logo-logout"
+                src="assets/logout.png"
+                alt="logo-logout"
+              />
+              <a class="boton-logout" [routerLink]="['/login']"
+                ><h2 class="cerrar">Cerrar Sesion</h2></a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
+      <tbody class="contenido">
+        <div>
+          <form>
+            <div class="contenido">
+              <label class="etiqueta" for="Nombre del Producto"
+                >Nombre del Producto</label
+              >
+              <input
+                class="redondeado"
+                type="text"
+                placeholder="Ingresa el nombre del Producto"
+                name="nombre"
+                [(ngModel)]="producto.nombre"
+                required
+              />
+            </div>
+            <div class="contenido">
+              <label class="etiqueta" for="Nombre del Producto"
+                >Stock del Producto</label
+              >
+              <input
+                class="redondeado"
+                type="number"
+                placeholder="Ingresa cuanto stock tienes"
+                name="stock"
+                [(ngModel)]="producto.stock"
+                required
+              />
+            </div>
+            <div class="contenido">
+              <label class="etiqueta" for="Nombre del Producto"
+                >Invercion</label
+              >
+              <input
+                class="redondeado"
+                type="number"
+                placeholder="Ingresa cuanto invertiste"
+                name="invercion"
+                [(ngModel)]="producto.invercion"
+                required
+              />
+            </div>
+            <div class="contenido">
+              <label class="etiqueta" for="nombre"
+                >Precio de lista del Producto</label
+              >
+              <input
+                class="redondeado"
+                type="number"
+                placeholder="Ingresa tu apellido"
+                name="plista"
+                [(ngModel)]="producto.precioLista"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="botonSubir">
+          <button
+            (click)="Update(id)"
+            class="btn btn-outline-success btn-block"
+          >
+            Actualizar
+          </button>
+        </div>
+      </tbody>
     </div>
-  </body>
-  
+  </div>
+</body>

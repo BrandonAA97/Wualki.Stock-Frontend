@@ -78,8 +78,8 @@
             <td style="width:200px">{{ product.nombre }}</td>
             <td style="width:41px">{{ product.stock }}</td>
             <td style="width:66px">{{ product.invercion }}</td>
-            <td style="width:118px">{{ product.precioLista - product.invercion }}</td>
-            <td style="width:73px">{{ product.precioLista }}</td>
+            <td style="width:118px">{{ product.precioLista }}</td>
+            <td style="width:70px">{{ product.precioLista - product.invercion }}</td>
             <td>
                 <div class="acciones">
                   <td><a  [routerLink]="['/editar', product.id]" class="btn btn-warning"><img class="imagen-acciones" src="../../assets/editar.png" alt="imagen-editar"></a></td>

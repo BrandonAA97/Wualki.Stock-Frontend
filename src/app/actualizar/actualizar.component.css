@@ -4,7 +4,6 @@ body{
     padding: 0; 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: center; 
     height: 100vh;
     width: 100%;
     justify-content: center;
@@ -167,3 +166,38 @@ h2.estoyeneste{
     padding-left: 140px;
 
 }
+
+form {
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+   }
+   
+   form .contenido {
+    display: block;
+    position: relative;
+    width: calc(90%);
+    height: auto;
+    margin: 10px auto;
+    padding: 30px 10px 10px;
+   }
+   
+   form .contenido input {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 10px;
+    font-size: 18px;
+   }
+   
+   form .contenido label {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 10px;
+    left: 50px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background-color: rgb(1, 78, 83)
+   }
